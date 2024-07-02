@@ -18,10 +18,6 @@ public class ModItems
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FoodMod.MODID);
 
-    //TEST
-    public static final RegistryObject<Item> LUCAS_FOOT = ITEMS.register("lucas_foot",
-            () -> new Item(new Item.Properties()));
-
     //New
     public static final RegistryObject<Item> LEBRON = ITEMS.register("lebron",
             () -> new Item(new Item.Properties()));
