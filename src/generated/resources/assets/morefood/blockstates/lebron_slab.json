@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "morefood:block/lebron_slab"
+    },
+    "type=double": {
+      "model": "morefood:block/lebron_block"
+    },
+    "type=top": {
+      "model": "morefood:block/lebron_slab_top"
+    }
+  }
+}

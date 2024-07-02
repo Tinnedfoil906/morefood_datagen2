@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "morefood:block/lebron_pressure_plate"
+    },
+    "powered=true": {
+      "model": "morefood:block/lebron_pressure_plate_down"
+    }
+  }
+}

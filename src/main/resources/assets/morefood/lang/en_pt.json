@@ -1,0 +1,20 @@
+{
+  "item.morefood.lebron": "LeBron James",
+
+  "item.morefood.cooked_lebron": "Cooked LeBron James",
+  "item.morefood.burnt_lebron": "Burnt LeBron James",
+  "item.morefood.extraburnt_lebron": "OH MY GOD WHAT HAVE YOU DONE",
+  "item.morefood.ash": "Ash",
+
+  "block.morefood.lebron_block": "Block of LeBron James",
+  "block.morefood.lebron_ore": "LeBron Ore",
+
+  "item.morefood.honey_dipped_lebron": "LeBron Dipped In A Honey Bottle",
+  "item.morefood.flint_and_steel_and_lebron": "Flint And Steel And LeBron Essence",
+
+  "creativetab.more_food_and_drinks_tab": "LeBron James",
+
+  "tooltip.honey_dipped_lebron": "Has a high chance of giving the player Jump Boost",
+  "tooltip.flint_and_steel_and_lebron": "Use this to light fires that have LeBron's essence within them",
+  "tooltip.extraburnt_lebron": "Do NOT eat this (Since it's literally on fire try using it as fuel)"
+}

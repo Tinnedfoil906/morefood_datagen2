@@ -1,0 +1,13 @@
+// 1.20.6	2024-07-01T22:14:42.4044926	Loot Tables
+13574fbe9ad3c3e07819de2fba8121cfb0c7f49c data/morefood/loot_tables/blocks/deepslate_lebron_ore.json
+000f017d9e5bd42ca9917425a021a211e8123ece data/morefood/loot_tables/blocks/lebron_block.json
+f78a90e87b0687b1c59c0689d13a562b213b5004 data/morefood/loot_tables/blocks/lebron_button.json
+617e90f179cd1efe08bc18d5ab4f5bed6d69f1a8 data/morefood/loot_tables/blocks/lebron_door.json
+f1ae7cd9267c65d720a2affbcc929a8567c403f1 data/morefood/loot_tables/blocks/lebron_fence.json
+c028cbb70fe12cdc66433753cc698e4eec276dfc data/morefood/loot_tables/blocks/lebron_fence_gate.json
+8a71e855334b19b2405e213181bd521485ad496d data/morefood/loot_tables/blocks/lebron_ore.json
+fea45a83928c9527f22ec966ff0df332765dc502 data/morefood/loot_tables/blocks/lebron_pressure_plate.json
+ae7489ba85d3aa86230510b4e1102b84b32fcab7 data/morefood/loot_tables/blocks/lebron_slab.json
+6f7d084998adae5a9b4d0d88aa3f587da7ccbb63 data/morefood/loot_tables/blocks/lebron_stairs.json
+f596e8a64f61f1bad5728d55c2fa0ce56e50c529 data/morefood/loot_tables/blocks/lebron_trapdoor.json
+34176fecd541f28537bbe2afc2923a823ce45722 data/morefood/loot_tables/blocks/lebron_wall.json

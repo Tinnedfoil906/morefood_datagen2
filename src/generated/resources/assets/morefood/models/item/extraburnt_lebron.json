@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:block/fire_0",
+    "layer1": "morefood:item/extraburnt_lebron",
+    "layer2": "minecraft:block/fire_1"
+  }
+}

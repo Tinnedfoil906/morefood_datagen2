@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "morefood:lebron"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "morefood:flint_and_steel_and_lebron"
+  }
+}

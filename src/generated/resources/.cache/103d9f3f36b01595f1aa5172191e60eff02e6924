@@ -1,0 +1,4 @@
+// 1.20.6	2024-07-01T22:14:42.406494	Registries
+388ce2fdad5c1ed9f94d71b87a4eeee3346d7ba8 data/morefood/forge/biome_modifier/add_lebron_ore.json
+5dc92f75fb7fe918169971a2e602e2fa89658948 data/morefood/worldgen/configured_feature/lebron_ore.json
+b56eded4b5667833193e2c73713ed2814ae021cc data/morefood/worldgen/placed_feature/lebron_ore_placed.json
