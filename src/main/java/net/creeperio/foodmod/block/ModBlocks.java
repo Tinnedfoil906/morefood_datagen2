@@ -33,6 +33,8 @@ public class ModBlocks
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)
             ));
 
+    //tip instead of lebron planks, lebron wood should be crafted into regular lebron like the ore drop
+
     public static final RegistryObject<Block> LEBRON_BLOCK = registerBlock("lebron_block",
             () -> new
                     Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
@@ -94,7 +96,7 @@ public class ModBlocks
 
     public static final RegistryObject<Block> LEBRON_BUTTON = registerBlock("lebron_button",
             () -> new ButtonBlock(BlockSetType.OAK, 30,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)
                     //.sound(ModSounds.LEBRON_BLOCK_SOUNDS)
             ));
     //all buttons are breakable with every tool even without any tool and always drop so uh...
@@ -108,16 +110,34 @@ public class ModBlocks
                     BlockBehaviour.Properties.ofFullCopy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
                     //this makes it as hard to break as an iron pressure plate
                     //technically can just do an iron block... but this might have values for
-                    //the weighted aspect..? or is that in the type of the pressure plate
+                    //the weighted aspect...? or is that in the type of the pressure plate
                     //.sound(ModSounds.LEBRON_BLOCK_SOUNDS)
                     //doing the iron pressure plate for this
 
                     //figure out how to do sounds for buttons, pressure plates, doors and trapdoors
             ));
+    // the door and trapdoor act like wood doors, but they take as long as their iron counterparts to break
+
+    // the pressure plate takes as long as iron to break but acts like wood
+
+    // buttons are fucked up,
+    // so it doesn't matter what button the ofFullCopy uses since they all break the same,
+    // but it acts like wood buttons with the same time to become unpressed
+
+    //basically everything breaks as hard as their iron counterparts (except for the stupid button)
+    //but acts like wood stuff
+
+    // btw thank you InteliJ for trying to correct
+    // every single thing tat i fucjing type than yk you so fucking mucyh
+
+    //LMAO CORRECTING A MISSPELL OF FUCKING TO FUNDING
+
     //Help my brain is melting
     //brain not braining
 
     //WHY ARE THERE 45 WARNINGS ALL I DID WAS DOWNLOAD SOME LIBRARIES OR SOMETHING
+
+    //this part of the code has so many comments it's actually becoming worrying
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

@@ -12,20 +12,21 @@ public class ModTags
 {
     public static class Blocks
     {
-        public static final TagKey<Block> NEEDS_LEBRON_TOOL = BlockTags.create(new ResourceLocation(FoodMod.MODID, "needs_lebron_tool"));
+        //public static final TagKey<Block> NEEDS_LEBRON_TOOL = BlockTags.create(new ResourceLocation(FoodMod.MODID, "needs_lebron_tool"));
 
-        public static final TagKey<Block> INCORRECT_LEBRON_PICK = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_pick"));
-        public static final TagKey<Block> INCORRECT_LEBRON_SWORD = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_sword"));
-        public static final TagKey<Block> INCORRECT_LEBRON_AXE = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_axe"));
-        public static final TagKey<Block> INCORRECT_LEBRON_SHOVEL = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_shovel"));
-        public static final TagKey<Block> INCORRECT_LEBRON_HOE = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_hoe"));
+        //public static final TagKey<Block> INCORRECT_LEBRON_PICK = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_pick"));
+        //public static final TagKey<Block> INCORRECT_LEBRON_SWORD = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_sword"));
+        //public static final TagKey<Block> INCORRECT_LEBRON_AXE = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_axe"));
+        //public static final TagKey<Block> INCORRECT_LEBRON_SHOVEL = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_shovel"));
+        //public static final TagKey<Block> INCORRECT_LEBRON_HOE = BlockTags.create(new ResourceLocation(FoodMod.MODID, "incorrect_lebron_hoe"));
 
-        /*public static final TagKey<Block> INCORRECT_LEBRON_TOOL = tag("incorrect_lebron_tool");
+        //public static final TagKey<Block> INCORRECT_LEBRON_TOOL = tag("incorrect_lebron_tool");
+        //shit above is broke ^^
 
         private static TagKey<Block> tag(String name)
         {
             return BlockTags.create(new ResourceLocation(FoodMod.MODID, name));
-        }*/
+        }
     }
 
     public static class Items

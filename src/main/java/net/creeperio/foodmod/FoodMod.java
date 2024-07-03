@@ -53,11 +53,12 @@ public class FoodMod
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         //this being here or not being here doesn't change anything 😭
-        ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_PICK_TIER, Tiers.NETHERITE);
-        ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_SWORD_TIER, Tiers.NETHERITE);
-        ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_AXE_TIER, Tiers.NETHERITE);
-        ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_SHOVEL_TIER, Tiers.NETHERITE);
-        ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_HOE_TIER, Tiers.NETHERITE);
+        //ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_PICK_TIER, Tiers.NETHERITE);
+        //ForgeTierManager.registerTier(Tiers.NETHERITE, Tiers.DIAMOND);
+        //ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_SWORD_TIER, Tiers.NETHERITE);
+        //ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_AXE_TIER, Tiers.NETHERITE);
+        //ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_SHOVEL_TIER, Tiers.NETHERITE);
+        //ForgeTierManager.registerCustomTier(ModToolTiers.LEBRON_HOE_TIER, Tiers.NETHERITE);
     }
 
     // Add the example block item to the building blocks tab

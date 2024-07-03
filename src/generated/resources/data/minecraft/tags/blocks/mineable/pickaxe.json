@@ -2,6 +2,14 @@
   "values": [
     "morefood:lebron_ore",
     "morefood:deepslate_lebron_ore",
-    "morefood:lebron_block"
+    "morefood:lebron_block",
+    "morefood:lebron_stairs",
+    "morefood:lebron_slab",
+    "morefood:lebron_fence",
+    "morefood:lebron_fence_gate",
+    "morefood:lebron_wall",
+    "morefood:lebron_door",
+    "morefood:lebron_trapdoor",
+    "morefood:lebron_pressure_plate"
   ]
 }

@@ -1,29 +1,29 @@
-[02Jul2024 20:32:35.443] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 16, --assetsDir, C:\Users\cezar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, morefood, --all, --output, C:\Users\cezar\Desktop\morefood_datagen\src\generated\resources, --existing, C:\Users\cezar\Desktop\morefood_datagen\src\main\resources]
-[02Jul2024 20:32:35.467] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.3+9-LTS
-[02Jul2024 20:32:35.471] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.3 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[02Jul2024 20:32:35.614] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[02Jul2024 20:32:35.815] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/cezar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
-[02Jul2024 20:32:38.158] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[02Jul2024 20:32:40.326] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\cezar\.gradle\caches\forge_gradle\assets, --assetIndex, 16, --mod, morefood, --all, --output, C:\Users\cezar\Desktop\morefood_datagen\src\generated\resources, --existing, C:\Users\cezar\Desktop\morefood_datagen\src\main\resources]
-[02Jul2024 20:32:51.394] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 50.0.31, for MC 1.20.6 with MCP 20240429.135109
-[02Jul2024 20:32:51.446] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v50.0.31 Initialized
-[02Jul2024 20:32:51.512] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[02Jul2024 20:32:53.487] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [morefood]
-[02Jul2024 20:32:53.756] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/cezar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6/forge-1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[02Jul2024 20:32:53.758] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/cezar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6/forge-1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6.jar%230!/data/.mcassetsroot' uses unexpected schema
-[02Jul2024 20:32:54.134] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[02Jul2024 20:32:54.550] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 415 ms
-[02Jul2024 20:32:54.551] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[02Jul2024 20:32:54.611] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 58 ms
-[02Jul2024 20:32:54.611] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: morefood
-[02Jul2024 20:32:55.122] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: morefood finished after 510 ms
-[02Jul2024 20:32:55.122] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: morefood
-[02Jul2024 20:32:55.132] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: morefood finished after 9 ms
-[02Jul2024 20:32:55.132] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id morefood
-[02Jul2024 20:32:55.171] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id morefood finished after 37 ms
-[02Jul2024 20:32:55.171] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id morefood
-[02Jul2024 20:32:55.175] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id morefood finished after 3 ms
-[02Jul2024 20:32:55.175] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[02Jul2024 20:32:55.184] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 8 ms
-[02Jul2024 20:32:55.184] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1051 ms
-[02Jul2024 20:32:55.198] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 113, old count: 113, new count: 114, removed stale: 0, written: 0
+[03Jul2024 11:44:21.335] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 16, --assetsDir, C:\Users\cezar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, morefood, --all, --output, C:\Users\cezar\Desktop\morefood_datagen\src\generated\resources, --existing, C:\Users\cezar\Desktop\morefood_datagen\src\main\resources]
+[03Jul2024 11:44:21.343] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+[03Jul2024 11:44:21.350] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.3 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[03Jul2024 11:44:21.745] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[03Jul2024 11:44:22.111] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/cezar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
+[03Jul2024 11:44:25.106] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[03Jul2024 11:44:27.437] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\cezar\.gradle\caches\forge_gradle\assets, --assetIndex, 16, --mod, morefood, --all, --output, C:\Users\cezar\Desktop\morefood_datagen\src\generated\resources, --existing, C:\Users\cezar\Desktop\morefood_datagen\src\main\resources]
+[03Jul2024 11:44:42.606] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 50.0.31, for MC 1.20.6 with MCP 20240429.135109
+[03Jul2024 11:44:42.623] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v50.0.31 Initialized
+[03Jul2024 11:44:42.738] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[03Jul2024 11:44:44.486] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [morefood]
+[03Jul2024 11:44:44.866] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/cezar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6/forge-1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[03Jul2024 11:44:44.869] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/cezar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6/forge-1.20.6-50.0.31_mapped_parchment_2024.05.01-1.20.6-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[03Jul2024 11:44:45.288] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[03Jul2024 11:44:46.016] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 722 ms
+[03Jul2024 11:44:46.016] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[03Jul2024 11:44:46.173] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 156 ms
+[03Jul2024 11:44:46.173] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: morefood
+[03Jul2024 11:44:46.974] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: morefood finished after 801 ms
+[03Jul2024 11:44:46.974] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: morefood
+[03Jul2024 11:44:47.019] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: morefood finished after 44 ms
+[03Jul2024 11:44:47.019] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id morefood
+[03Jul2024 11:44:47.094] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id morefood finished after 71 ms
+[03Jul2024 11:44:47.094] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id morefood
+[03Jul2024 11:44:47.101] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id morefood finished after 6 ms
+[03Jul2024 11:44:47.101] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[03Jul2024 11:44:47.118] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 15 ms
+[03Jul2024 11:44:47.118] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1830 ms
+[03Jul2024 11:44:47.137] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 112, old count: 112, new count: 113, removed stale: 0, written: 0

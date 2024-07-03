@@ -2,6 +2,7 @@ package net.creeperio.foodmod.item;
 
 import net.creeperio.foodmod.block.ModBlocks;
 import net.creeperio.foodmod.util.ModTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -64,7 +65,7 @@ public class ModToolTiers {
             9.0F,
             4.0F,
             15,
-            ModTags.Blocks.NEEDS_LEBRON_TOOL,
+            BlockTags.NEEDS_IRON_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
@@ -73,14 +74,18 @@ public class ModToolTiers {
                     return Ingredient.of(ModItems.LEBRON.get());
                 }
             },
-            ModTags.Blocks.INCORRECT_LEBRON_PICK
+            BlockTags.INCORRECT_FOR_IRON_TOOL
     );
+    // basically iron tier but faster and with more durability
+    // (in between diamond and netherite durability and speed)
+
+    //VVV might not need this if i figure out how to modify the ModItems itself
     public static final ForgeTier LEBRON_SWORD_TIER = new ForgeTier(
             2031,
             9.0F,
-            4.0F,
+            8,
             15,
-            ModTags.Blocks.NEEDS_LEBRON_TOOL,
+            BlockTags.NEEDS_IRON_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
@@ -89,14 +94,14 @@ public class ModToolTiers {
                     return Ingredient.of(ModItems.LEBRON.get());
                 }
             },
-            ModTags.Blocks.INCORRECT_LEBRON_SWORD
+            BlockTags.INCORRECT_FOR_IRON_TOOL
     );
     public static final ForgeTier LEBRON_AXE_TIER = new ForgeTier(
             2031,
             9.0F,
             4.0F,
             15,
-            ModTags.Blocks.NEEDS_LEBRON_TOOL,
+            BlockTags.NEEDS_IRON_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
@@ -105,14 +110,14 @@ public class ModToolTiers {
                     return Ingredient.of(ModItems.LEBRON.get());
                 }
             },
-            ModTags.Blocks.INCORRECT_LEBRON_AXE
+            BlockTags.INCORRECT_FOR_IRON_TOOL
     );
     public static final ForgeTier LEBRON_SHOVEL_TIER = new ForgeTier(
             2031,
             9.0F,
             4.0F,
             15,
-            ModTags.Blocks.NEEDS_LEBRON_TOOL,
+            BlockTags.NEEDS_IRON_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
@@ -121,14 +126,14 @@ public class ModToolTiers {
                     return Ingredient.of(ModItems.LEBRON.get());
                 }
             },
-            ModTags.Blocks.INCORRECT_LEBRON_SHOVEL
+            BlockTags.INCORRECT_FOR_IRON_TOOL
     );
     public static final ForgeTier LEBRON_HOE_TIER = new ForgeTier(
             2031,
             9.0F,
             4.0F,
             15,
-            ModTags.Blocks.NEEDS_LEBRON_TOOL,
+            BlockTags.NEEDS_IRON_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
@@ -137,6 +142,6 @@ public class ModToolTiers {
                     return Ingredient.of(ModItems.LEBRON.get());
                 }
             },
-            ModTags.Blocks.INCORRECT_LEBRON_HOE
+            BlockTags.INCORRECT_FOR_IRON_TOOL
     );
 }

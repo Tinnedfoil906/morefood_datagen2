@@ -38,38 +38,30 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LEBRON_WALL.get())
 
                 .add(ModBlocks.LEBRON_DOOR.get())
-                .add(ModBlocks.LEBRON_TRAPDOOR.get());
+                .add(ModBlocks.LEBRON_TRAPDOOR.get())
 
-                //.add(ModBlocks.LEBRON_PRESSURE_PLATE.get());
+                .add(ModBlocks.LEBRON_PRESSURE_PLATE.get());
                 //all buttons take the same amount of time to break and always drop... tf mojang?
 
         //Needs Tags
-        //this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
-        //        .add(ModBlocks.LEBRON_ORE.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LEBRON_ORE.get())
-                .add(ModBlocks.DEEPSLATE_LEBRON_ORE.get());
-                //.add(ModBlocks.LEBRON_BLOCK.get());
+                .add(ModBlocks.DEEPSLATE_LEBRON_ORE.get())
 
-        //this.tag(BlockTags.NEEDS_IRON_TOOL)
-        //        .add(ModBlocks.LEBRON_BLOCK.get());
+                .add(ModBlocks.LEBRON_BLOCK.get())
 
-        //this.tag(Tags.Blocks.NEEDS_GOLD_TOOL)
-        //        .add
+                .add(ModBlocks.LEBRON_STAIRS.get())
+                .add(ModBlocks.LEBRON_SLAB.get())
 
-        //this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-        //        .add(ModBlocks.LEBRON_BLOCK.get());
+                .add(ModBlocks.LEBRON_FENCE.get())
+                .add(ModBlocks.LEBRON_FENCE_GATE.get())
+                .add(ModBlocks.LEBRON_WALL.get())
 
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.LEBRON_BLOCK.get());
+                .add(ModBlocks.LEBRON_DOOR.get())
+                .add(ModBlocks.LEBRON_TRAPDOOR.get())
 
-        //this.tag(ModTags.Blocks.NEEDS_LEBRON_TOOL)
-        //        .add(ModBlocks.LEBRON_BLOCK.get());
-
-        //Incorrect Tags
-        //this.tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
-        //        .add(ModBlocks.LEBRON_BLOCK.get());
+                .add(ModBlocks.LEBRON_PRESSURE_PLATE.get());
 
 
         //Block Tags

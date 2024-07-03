@@ -1,7 +1,6 @@
-// 1.20.6	2024-07-01T22:14:42.4014935	Tags for minecraft:block mod id morefood
-a7fbbea64b2b0d58392e96c85b2494fb7fe72de3 data/forge/tags/blocks/needs_netherite_tool.json
+// 1.20.6	2024-07-03T01:26:57.6525833	Tags for minecraft:block mod id morefood
 f0bfabcdbed93d96b93afbc158b9ac57c58b5b62 data/minecraft/tags/blocks/fences.json
 c538a3c1e7fce8928a87ea4be9d723cb8872c36d data/minecraft/tags/blocks/fence_gates.json
-95b6b975387097f2ff52749b6734c04da6d51026 data/minecraft/tags/blocks/mineable/pickaxe.json
-c560270c6c77c11ad765a48d5cfe5c11102ed922 data/minecraft/tags/blocks/needs_stone_tool.json
+e194ebe56693f1bcc762a5674aed34ebec4f091e data/minecraft/tags/blocks/mineable/pickaxe.json
+e194ebe56693f1bcc762a5674aed34ebec4f091e data/minecraft/tags/blocks/needs_stone_tool.json
 52345d7f3aa45007d12b14474a3fc491bf25c653 data/minecraft/tags/blocks/walls.json
