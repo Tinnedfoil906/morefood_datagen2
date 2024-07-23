@@ -20,6 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LEBRON_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_LEBRON_ORE);
 
+        blockWithItem(ModBlocks.ASH_BLOCK);
+
         //NOT FULL BLOCKS
         stairsBlock(((StairBlock) ModBlocks.LEBRON_STAIRS.get()),
                 blockTexture(ModBlocks.LEBRON_BLOCK.get()));

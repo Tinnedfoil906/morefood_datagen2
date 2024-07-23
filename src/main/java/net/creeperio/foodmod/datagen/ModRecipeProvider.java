@@ -221,7 +221,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.LEBRON_JAMES_MY_SUNSHINE.get()), has(ModItems.LEBRON_JAMES_MY_SUNSHINE.get()))
                 .save(pRecipeOutput);
         //DISC BLOOD DONORS
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_MUSIC_DISC_BD.get())
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_MUSIC_DISC_BD.get())
                 .pattern("^O^")
                 .define('^', Items.REDSTONE)
                 .define('O', ModItems.LEBRON_MUSIC_DISC.get())
@@ -234,7 +234,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('^', Items.REDSTONE)
                 .define('O', ModItems.LEBRON_MUSIC_DISC_REMIX.get())
                 .unlockedBy(getHasName(ModItems.LEBRON_MUSIC_DISC_REMIX.get()), has(ModItems.LEBRON_MUSIC_DISC_REMIX.get()))
-                .save(pRecipeOutput, FoodMod.MODID + ":" + ModItems.LEBRON_MUSIC_DISC_BD.get() + "_from_ii");
+                .save(pRecipeOutput, FoodMod.MODID + ":" + ModItems.LEBRON_MUSIC_DISC_BD.get() + "_from_ii");*/
+
+        //ASH BLOCK
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ASH_BLOCK.get())
+                .pattern("^^^")
+                .pattern("^^^")
+                .pattern("^^^")
+                .define('^', ModItems.ASH.get())
+                .unlockedBy(getHasName(ModItems.ASH.get()), has(ModItems.ASH.get()))
+                .save(pRecipeOutput);
+
+        //ASH
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ASH.get(), 9)
+                .requires(ModBlocks.ASH_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.ASH_BLOCK.get()), has(ModBlocks.ASH_BLOCK.get()))
+                .save(pRecipeOutput);
     }
 
     //Hardcoded MEH

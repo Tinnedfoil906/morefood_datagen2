@@ -41,6 +41,11 @@ public class ModBlocks
                     .sound(ModSounds.LEBRON_BLOCK_SOUNDS)
     ));
 
+    public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
+            () -> new
+                    Block(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK)
+            ));
+
 //lebron_stairs//lebron_slab//lebron_button//lebron_pressure_plate//lebron_fence//lebron_fence_gate//lebron_wall//lebron_door//lebron_trapdoor//
 
     //LEBRON_BLOCK variants

@@ -19,6 +19,8 @@ public class ModLanguageProvider_en_us extends LanguageProvider {
         this.add(ModBlocks.DEEPSLATE_LEBRON_ORE.get(), "Deepslate LeBron James Ore");
         this.add(ModBlocks.LEBRON_BLOCK.get(), "Block of LeBron James");
 
+        this.add(ModBlocks.ASH_BLOCK.get(), "Block of Ash");
+
         //VARIATIONS
         this.add(ModBlocks.LEBRON_STAIRS.get(), "LeBron James Stairs");
         this.add(ModBlocks.LEBRON_SLAB.get(), "LeBron James Slab");

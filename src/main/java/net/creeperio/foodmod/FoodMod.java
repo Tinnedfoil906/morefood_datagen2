@@ -2,6 +2,7 @@ package net.creeperio.foodmod;
 
 import com.mojang.logging.LogUtils;
 import net.creeperio.foodmod.block.ModBlocks;
+import net.creeperio.foodmod.entity.ModEntities;
 import net.creeperio.foodmod.item.*;
 import net.creeperio.foodmod.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,7 +40,9 @@ public class FoodMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        //WHY IS THIS MISSPELLED
         ModSounds.reigster(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

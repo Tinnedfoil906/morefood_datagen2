@@ -30,6 +30,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
                 .add(ModBlocks.LEBRON_BLOCK.get())
 
+                .add(ModBlocks.ASH_BLOCK.get())
+                //mineable with any pick like redstone
+
                 .add(ModBlocks.LEBRON_STAIRS.get())
                 .add(ModBlocks.LEBRON_SLAB.get())
 
@@ -44,7 +47,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 //all buttons take the same amount of time to break and always drop... tf mojang?
 
         //Needs Tags
-
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LEBRON_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LEBRON_ORE.get())
@@ -62,7 +64,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LEBRON_TRAPDOOR.get())
 
                 .add(ModBlocks.LEBRON_PRESSURE_PLATE.get());
-
 
         //Block Tags
         this.tag(BlockTags.FENCES)

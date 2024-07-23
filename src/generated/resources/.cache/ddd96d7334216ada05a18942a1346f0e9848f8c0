@@ -1,6 +1,6 @@
-// 1.20.6	2024-07-03T01:26:57.6525833	Tags for minecraft:block mod id morefood
+// 1.20.6	2024-07-23T13:31:47.5664669	Tags for minecraft:block mod id morefood
 f0bfabcdbed93d96b93afbc158b9ac57c58b5b62 data/minecraft/tags/blocks/fences.json
 c538a3c1e7fce8928a87ea4be9d723cb8872c36d data/minecraft/tags/blocks/fence_gates.json
-e194ebe56693f1bcc762a5674aed34ebec4f091e data/minecraft/tags/blocks/mineable/pickaxe.json
+63c54a155aa7fd175e0876fb0419624815ced397 data/minecraft/tags/blocks/mineable/pickaxe.json
 e194ebe56693f1bcc762a5674aed34ebec4f091e data/minecraft/tags/blocks/needs_stone_tool.json
 52345d7f3aa45007d12b14474a3fc491bf25c653 data/minecraft/tags/blocks/walls.json

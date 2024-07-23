@@ -1,4 +1,6 @@
-// 1.20.6	2024-07-23T00:08:00.261143	Recipes
+// 1.20.6	2024-07-23T12:45:45.9438363	Recipes
+f2d180c31a82b48371749517a3fefe1255d74f1c data/morefood/advancements/recipes/misc/ash.json
+b87c6d6422597a63c77efba75a788db8b2e18b45 data/morefood/advancements/recipes/misc/ash_block.json
 48ab5c86c967f462be9b48e3d715cc4eb7bb3d09 data/morefood/advancements/recipes/misc/ash_from_smelting_extraburnt_lebron.json
 00a9010535b68d1730ba0c231212e692f1f3a211 data/morefood/advancements/recipes/misc/basket_ball.json
 371b79d7ede11601394d27fc17f37d5ce69fccde data/morefood/advancements/recipes/misc/burnt_lebron_from_smelting_cooked_lebron.json
@@ -30,6 +32,8 @@ cc25202bcf55c001eecc6aa9309a6027d09d57c3 data/morefood/advancements/recipes/misc
 3ac371292d0d72e5c2c16c9765ef927d48657a3f data/morefood/advancements/recipes/misc/super_lebron_pickaxe_smithing.json
 e162959a9b023f0a35ec428e6a051d7f70a39546 data/morefood/advancements/recipes/misc/super_lebron_shovel_smithing.json
 0cacab74864d2a2e5cfd16967ee02fd25cfbaf8b data/morefood/advancements/recipes/misc/super_lebron_sword_smithing.json
+c5cdb680374208de29ee3e29b26b4941b63d2c14 data/morefood/recipes/ash.json
+42912665b29ba9447eab7cfec2a2e3fb88a591cf data/morefood/recipes/ash_block.json
 fdb32c2756acf5c77023be0f260dcf83dd47e837 data/morefood/recipes/ash_from_smelting_extraburnt_lebron.json
 d108ae5a8aae3115765d98514c23d33b21c123f6 data/morefood/recipes/basket_ball.json
 0e120bde1b02a487b3addd4bc7663901f87b3260 data/morefood/recipes/burnt_lebron_from_smelting_cooked_lebron.json
