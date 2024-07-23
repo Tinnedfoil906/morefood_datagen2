@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "morefood:lebron"
+      "item": "minecraft:flint_and_steel"
     },
     {
-      "item": "minecraft:flint_and_steel"
+      "item": "morefood:lebron_essence"
     }
   ],
   "result": {

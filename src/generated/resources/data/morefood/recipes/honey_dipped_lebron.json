@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "morefood:lebron"
+      "item": "minecraft:honey_bottle"
     },
     {
-      "item": "minecraft:honey_bottle"
+      "item": "morefood:lebron"
     }
   ],
   "result": {

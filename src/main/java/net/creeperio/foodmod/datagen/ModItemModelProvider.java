@@ -21,7 +21,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.LEBRON);
+        simpleItem(ModItems.LEBRON_JAMES_MY_SUNSHINE);
+        simpleItem(ModItems.SUPER_LEBRON);
+        simpleItem(ModItems.OP_LEBRON);
 
+        simpleItem(ModItems.LEBRON_ESSENCE);
+
+        simpleItem(ModItems.RAW_LEBRON);
         simpleItem(ModItems.COOKED_LEBRON);
         simpleItem(ModItems.BURNT_LEBRON);
         onFireItem(ModItems.EXTRABURNT_LEBRON); //has the fire item
@@ -30,8 +36,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TAPE);
 
         simpleItem(ModItems.LEBRON_MUSIC_DISC);
+        simpleItem(ModItems.LEBRON_MUSIC_DISC_REMIX);
+        simpleItem(ModItems.LEBRON_MUSIC_DISC_SUNSHINE);
 
         simpleItem(ModItems.FLINT_AND_STEEL_AND_LEBRON);
+        simpleItem(ModItems.HONEY_DIPPED_LEBRON);
         simpleItem(ModItems.HONEY_DIPPED_LEBRON);
 
         simpleBlockItem(ModBlocks.LEBRON_DOOR);
@@ -54,6 +63,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.LEBRON_SHOVEL);
         handheldItem(ModItems.LEBRON_HOE);
 
+        handheldItem(ModItems.SUPER_LEBRON_PICKAXE);
+        handheldItem(ModItems.SUPER_LEBRON_SWORD);
+        handheldItem(ModItems.SUPER_LEBRON_AXE);
+        handheldItem(ModItems.SUPER_LEBRON_SHOVEL);
+        handheldItem(ModItems.SUPER_LEBRON_HOE);
+
+        handheldItem(ModItems.OP_LEBRON_PICKAXE);
+        handheldItem(ModItems.OP_LEBRON_SWORD);
+        handheldItem(ModItems.OP_LEBRON_AXE);
+        handheldItem(ModItems.OP_LEBRON_SHOVEL);
+        handheldItem(ModItems.OP_LEBRON_HOE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

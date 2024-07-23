@@ -1,6 +1,10 @@
 package net.creeperio.foodmod.datagen;
 
 import net.creeperio.foodmod.FoodMod;
+import net.creeperio.foodmod.datagen.language.ModLanguageProvider_en_us;
+import net.creeperio.foodmod.datagen.language.ModLanguageProvider_fr_fr;
+import net.creeperio.foodmod.datagen.language.ModLanguageProvider_lol_us;
+import net.creeperio.foodmod.datagen.language.ModLanguageProvider_ro_ro;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -32,5 +36,11 @@ public class DataGenerators {
 
         //worldgen YAYAY
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+
+        //this is how le speak
+        generator.addProvider(event.includeServer(), new ModLanguageProvider_en_us(packOutput, FoodMod.MODID, "en_us"));
+        generator.addProvider(event.includeServer(), new ModLanguageProvider_fr_fr(packOutput, FoodMod.MODID, "fr_fr"));
+        generator.addProvider(event.includeServer(), new ModLanguageProvider_lol_us(packOutput, FoodMod.MODID, "lol_us"));
+        generator.addProvider(event.includeServer(), new ModLanguageProvider_ro_ro(packOutput, FoodMod.MODID, "ro_ro"));
     }
 }

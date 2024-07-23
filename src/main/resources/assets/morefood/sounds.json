@@ -36,5 +36,21 @@
         "stream": true
       }
     ]
+  },
+  "lebron_song_remix": {
+    "sounds": [
+      {
+        "name": "morefood:lebron_song_remix",
+        "stream": true
+      }
+    ]
+  },
+  "lebron_song_sunshine": {
+    "sounds": [
+      {
+        "name": "morefood:lebron_song_sunshine",
+        "stream": true
+      }
+    ]
   }
 }

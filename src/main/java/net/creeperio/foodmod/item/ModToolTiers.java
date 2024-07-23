@@ -1,18 +1,10 @@
 package net.creeperio.foodmod.item;
 
-import net.creeperio.foodmod.block.ModBlocks;
-import net.creeperio.foodmod.util.ModTags;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.ForgeTier;
-import net.minecraftforge.common.Tags;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 /*public class ModToolTiers {
@@ -60,11 +52,11 @@ import java.util.function.Supplier;
 }*/
 
 public class ModToolTiers {
-    public static final ForgeTier LEBRON_PICK_TIER = new ForgeTier(
-            2031,
-            9.0F,
-            4.0F,
-            15,
+    public static final ForgeTier LEBRON_TIER = new ForgeTier(
+            905,
+            7.0F,
+            2.0F,
+            14,
             BlockTags.NEEDS_IRON_TOOL,
             new Supplier<Ingredient>()
             {
@@ -76,72 +68,41 @@ public class ModToolTiers {
             },
             BlockTags.INCORRECT_FOR_IRON_TOOL
     );
-    // basically iron tier but faster and with more durability
-    // (in between diamond and netherite durability and speed)
+    //more uses, faster, same damage same enchantability
 
-    //VVV might not need this if i figure out how to modify the ModItems itself
-    public static final ForgeTier LEBRON_SWORD_TIER = new ForgeTier(
-            2031,
-            9.0F,
-            8,
-            15,
-            BlockTags.NEEDS_IRON_TOOL,
+    public static final ForgeTier SUPER_LEBRON_TIER = new ForgeTier(
+            8124,
+            36.0F,
+            16.0F,
+            60,
+            BlockTags.NEEDS_DIAMOND_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
                 public Ingredient get()
                 {
-                    return Ingredient.of(ModItems.LEBRON.get());
+                    return Ingredient.of(ModItems.SUPER_LEBRON.get());
                 }
             },
-            BlockTags.INCORRECT_FOR_IRON_TOOL
+            BlockTags.INCORRECT_FOR_DIAMOND_TOOL
     );
-    public static final ForgeTier LEBRON_AXE_TIER = new ForgeTier(
-            2031,
-            9.0F,
-            4.0F,
-            15,
-            BlockTags.NEEDS_IRON_TOOL,
+    //idc just make it op
+
+    public static final ForgeTier OP_LEBRON_TIER = new ForgeTier(
+            32496,
+            144.0F,
+            64.0F,
+            240,
+            BlockTags.NEEDS_DIAMOND_TOOL,
             new Supplier<Ingredient>()
             {
                 @Override
                 public Ingredient get()
                 {
-                    return Ingredient.of(ModItems.LEBRON.get());
+                    return Ingredient.of(ModItems.OP_LEBRON.get());
                 }
             },
-            BlockTags.INCORRECT_FOR_IRON_TOOL
+            BlockTags.INCORRECT_FOR_DIAMOND_TOOL
     );
-    public static final ForgeTier LEBRON_SHOVEL_TIER = new ForgeTier(
-            2031,
-            9.0F,
-            4.0F,
-            15,
-            BlockTags.NEEDS_IRON_TOOL,
-            new Supplier<Ingredient>()
-            {
-                @Override
-                public Ingredient get()
-                {
-                    return Ingredient.of(ModItems.LEBRON.get());
-                }
-            },
-            BlockTags.INCORRECT_FOR_IRON_TOOL
-    );
-    public static final ForgeTier LEBRON_HOE_TIER = new ForgeTier(
-            2031,
-            9.0F,
-            4.0F,
-            15,
-            BlockTags.NEEDS_IRON_TOOL,
-            new Supplier<Ingredient>()
-            {
-                @Override
-                public Ingredient get()
-                {
-                    return Ingredient.of(ModItems.LEBRON.get());
-                }
-            },
-            BlockTags.INCORRECT_FOR_IRON_TOOL
-    );
+    //idc just make it op again
 }

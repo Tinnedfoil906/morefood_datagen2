@@ -6,6 +6,10 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods
 {
+    public static final FoodProperties RAW_LEBRON = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.8F)
+            .effect(new MobEffectInstance(MobEffects.HUNGER, 300, 0), 0.5F).build();
     public static final FoodProperties COOKED_LEBRON = new FoodProperties.Builder()
             .nutrition(10)
             .saturationModifier(4).build();

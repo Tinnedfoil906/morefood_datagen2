@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -41,25 +42,52 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creativetab.lebron_items"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(ModItems.LEBRON.get());
+                        //foods
+                        output.accept(ModItems.RAW_LEBRON.get());
 
                         output.accept(ModItems.COOKED_LEBRON.get());
                         output.accept(ModItems.BURNT_LEBRON.get());
-                        output.accept(ModItems.EXTRABURNT_LEBRON.get());
-                        output.accept(ModItems.ASH.get());
+                        //output.accept(ModItems.EXTRABURNT_LEBRON.get());
+                        //output.accept(ModItems.ASH.get());
 
                         output.accept(ModItems.TAPE.get());
 
+                        //utilities
                         output.accept(ModItems.FLINT_AND_STEEL_AND_LEBRON.get());
                         output.accept(ModItems.HONEY_DIPPED_LEBRON.get());
 
                         output.accept(ModItems.LEBRON_MUSIC_DISC.get());
+                        output.accept(ModItems.LEBRON_MUSIC_DISC_REMIX.get());
+                        output.accept(ModItems.LEBRON_MUSIC_DISC_SUNSHINE.get());
+                        //output.accept(ModItems.LEBRON_MUSIC_DISC_BD.get());
+
+                        output.accept(ModItems.BASKET_BALL.get());
+                        output.accept(ModItems.LEBRON_ESSENCE.get());
+
+                        output.accept(ModItems.LEBRON_JAMES_MY_SUNSHINE.get());
+
+                        //ore n tool
+                        output.accept(ModItems.LEBRON.get());
+                        output.accept(ModItems.SUPER_LEBRON.get());
+                        output.accept(ModItems.OP_LEBRON.get());
 
                         output.accept(ModItems.LEBRON_PICKAXE.get());
                         output.accept(ModItems.LEBRON_SWORD.get());
                         output.accept(ModItems.LEBRON_AXE.get());
                         output.accept(ModItems.LEBRON_SHOVEL.get());
                         output.accept(ModItems.LEBRON_HOE.get());
+
+                        output.accept(ModItems.SUPER_LEBRON_PICKAXE.get());
+                        output.accept(ModItems.SUPER_LEBRON_SWORD.get());
+                        output.accept(ModItems.SUPER_LEBRON_AXE.get());
+                        output.accept(ModItems.SUPER_LEBRON_SHOVEL.get());
+                        output.accept(ModItems.SUPER_LEBRON_HOE.get());
+
+                        output.accept(ModItems.OP_LEBRON_PICKAXE.get());
+                        output.accept(ModItems.OP_LEBRON_SWORD.get());
+                        output.accept(ModItems.OP_LEBRON_AXE.get());
+                        output.accept(ModItems.OP_LEBRON_SHOVEL.get());
+                        output.accept(ModItems.OP_LEBRON_HOE.get());
                     })
                     .build());
 
@@ -71,10 +99,12 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creativetab.lebron_blocks"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
+                        //full blocks
                         output.accept(ModBlocks.LEBRON_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_LEBRON_ORE.get());
                         output.accept(ModBlocks.LEBRON_BLOCK.get());
 
+                        //misc blocks
                         output.accept(ModBlocks.LEBRON_STAIRS.get());
                         output.accept(ModBlocks.LEBRON_SLAB.get());
 

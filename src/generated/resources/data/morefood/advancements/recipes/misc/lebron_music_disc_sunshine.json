@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lebron_james_my_sunshine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morefood:lebron_james_my_sunshine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morefood:lebron_music_disc_sunshine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lebron_james_my_sunshine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morefood:lebron_music_disc_sunshine"
+    ]
+  }
+}

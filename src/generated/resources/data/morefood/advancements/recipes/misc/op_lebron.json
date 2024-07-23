@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_super_lebron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morefood:super_lebron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morefood:op_lebron"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_super_lebron"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morefood:op_lebron"
+    ]
+  }
+}

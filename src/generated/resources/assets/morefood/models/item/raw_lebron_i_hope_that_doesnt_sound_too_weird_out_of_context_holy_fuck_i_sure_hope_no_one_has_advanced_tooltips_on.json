@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "morefood:item/raw_lebron_i_hope_that_doesnt_sound_too_weird_out_of_context_holy_fuck_i_sure_hope_no_one_has_advanced_tooltips_on"
+  }
+}

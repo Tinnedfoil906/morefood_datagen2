@@ -23,9 +23,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
 
         this.tag(ItemTags.MUSIC_DISCS)
-                .add(ModItems.LEBRON_MUSIC_DISC.get());
+                .add(ModItems.LEBRON_MUSIC_DISC.get())
+                .add(ModItems.LEBRON_MUSIC_DISC_REMIX.get())
+                .add(ModItems.LEBRON_MUSIC_DISC_SUNSHINE.get());
 
-        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
-                .add(ModItems.LEBRON_MUSIC_DISC.get());
+        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS);
+                //.add(ModItems.LEBRON_MUSIC_DISC.get())
+                //.add(ModItems.LEBRON_MUSIC_DISC_SUNSHINE.get());
     }
 }

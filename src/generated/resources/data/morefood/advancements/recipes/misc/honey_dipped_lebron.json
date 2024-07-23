@@ -1,16 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_honey_bottle": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:honey_bottle"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_lebron": {
       "conditions": {
         "items": [
@@ -31,8 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_lebron",
-      "has_honey_bottle"
+      "has_lebron"
     ]
   ],
   "rewards": {

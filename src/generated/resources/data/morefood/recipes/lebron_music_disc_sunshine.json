@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "&": {
+      "item": "morefood:lebron_james_my_sunshine"
+    },
+    "O": {
+      "item": "morefood:lebron_essence"
+    }
+  },
+  "pattern": [
+    "O&O"
+  ],
+  "result": {
+    "count": 1,
+    "id": "morefood:lebron_music_disc_sunshine"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "morefood:super_lebron"
+  },
+  "base": {
+    "item": "morefood:lebron_shovel"
+  },
+  "result": {
+    "count": 1,
+    "id": "morefood:super_lebron_shovel"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

@@ -25,7 +25,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.LEBRON_ORE.get()
     );
     private static final List<ItemLike> LEBRON_MEAT = List.of(
-            ModItems.LEBRON.get() //change this to raw lebron once it's added
+            ModItems.RAW_LEBRON.get() //change this to raw lebron once it's added
     );
     private static final List<ItemLike> COOKED_LEBRON = List.of(
             ModItems.COOKED_LEBRON.get()
@@ -70,16 +70,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pRecipeOutput, EXTRABURNT_LEBRON, RecipeCategory.MISC, ModItems.ASH.get(), badExp, meatSpeed, "lebron");
         //FIGURE OUT THE DAMN SMOKER AND CAMPFIRE ^^
 
+        lebronSmithing(pRecipeOutput, ModItems.LEBRON_PICKAXE.get(), RecipeCategory.MISC, ModItems.SUPER_LEBRON_PICKAXE.get());
+        lebronSmithing(pRecipeOutput, ModItems.LEBRON_SWORD.get(), RecipeCategory.MISC, ModItems.SUPER_LEBRON_SWORD.get());
+        lebronSmithing(pRecipeOutput, ModItems.LEBRON_AXE.get(), RecipeCategory.MISC, ModItems.SUPER_LEBRON_AXE.get());
+        lebronSmithing(pRecipeOutput, ModItems.LEBRON_SHOVEL.get(), RecipeCategory.MISC, ModItems.SUPER_LEBRON_SHOVEL.get());
+        lebronSmithing(pRecipeOutput, ModItems.LEBRON_HOE.get(), RecipeCategory.MISC, ModItems.SUPER_LEBRON_HOE.get());
+
+        superLebronSmithing(pRecipeOutput, ModItems.SUPER_LEBRON_PICKAXE.get(), RecipeCategory.MISC, ModItems.OP_LEBRON_PICKAXE.get());
+        superLebronSmithing(pRecipeOutput, ModItems.SUPER_LEBRON_SWORD.get(), RecipeCategory.MISC, ModItems.OP_LEBRON_SWORD.get());
+        superLebronSmithing(pRecipeOutput, ModItems.SUPER_LEBRON_AXE.get(), RecipeCategory.MISC, ModItems.OP_LEBRON_AXE.get());
+        superLebronSmithing(pRecipeOutput, ModItems.SUPER_LEBRON_SHOVEL.get(), RecipeCategory.MISC, ModItems.OP_LEBRON_SHOVEL.get());
+        superLebronSmithing(pRecipeOutput, ModItems.SUPER_LEBRON_HOE.get(), RecipeCategory.MISC, ModItems.OP_LEBRON_HOE.get());
+
         //CRAFTING RECIPES // CRAFTING RECIPES//
         //
         //
         //
         //RECIPE FOR LEBRON BLOCK
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LEBRON_BLOCK.get())
-                .pattern("MMM")
-                .pattern("MMM")
-                .pattern("MMM")
-                .define('M', ModItems.LEBRON.get())
+                .pattern("&&&")
+                .pattern("&&&")
+                .pattern("&&&")
+                .define('&', ModItems.LEBRON.get())
                 .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
                 .save(pRecipeOutput);
 
@@ -89,34 +101,163 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.LEBRON_BLOCK.get()), has(ModBlocks.LEBRON_BLOCK.get()))
                 .save(pRecipeOutput);
 
+        //RECIPE FOR SUPER LEBORN NETHERITE WHATEVER IT IS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUPER_LEBRON.get())
+                .pattern("=O=")
+                .pattern("&&&")
+                .pattern("=O=")
+                .define('&', ModItems.LEBRON.get())
+                .define('=', Items.NETHERITE_INGOT)
+                .define('O', Items.DIAMOND)
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+
+        //RECIPE FOR SUPER LEBORN NETHERITE WHATEVER IT IS again
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OP_LEBRON.get())
+                .pattern("=O=")
+                .pattern("&&&")
+                .pattern("=O=")
+                .define('&', ModItems.LEBRON.get())
+                .define('=', ModItems.SUPER_LEBRON.get())
+                .define('O', Items.DIAMOND)
+                .unlockedBy(getHasName(ModItems.SUPER_LEBRON.get()), has(ModItems.SUPER_LEBRON.get()))
+                .save(pRecipeOutput);
+
+        //okay how tf do i make a crafting recipe for an axe/hoe
+        //PICK
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_PICKAXE.get())
+                .pattern("&&&")
+                .pattern(" | ")
+                .pattern(" | ")
+                .define('&', ModItems.LEBRON.get())
+                .define('|', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+        //SWORD
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_SWORD.get())
+                .pattern("&")
+                .pattern("&")
+                .pattern("|")
+                .define('&', ModItems.LEBRON.get())
+                .define('|', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+        //SHOVEL
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_SHOVEL.get())
+                .pattern("&")
+                .pattern("|")
+                .pattern("|")
+                .define('&', ModItems.LEBRON.get())
+                .define('|', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+        //AXE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_AXE.get())
+                .pattern("&&")
+                .pattern("&|")
+                .pattern(" |")
+                .define('&', ModItems.LEBRON.get())
+                .define('|', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+        //HOE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_HOE.get())
+                .pattern("&&")
+                .pattern(" |")
+                .pattern(" |")
+                .define('&', ModItems.LEBRON.get())
+                .define('|', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+
         //RECIPE FOR FLINT AND STEEL AND LEBRON
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FLINT_AND_STEEL_AND_LEBRON.get())
-                .requires(ModItems.LEBRON.get()) //CHANGE THIS TO THE LEBRON ESSENCE
                 .requires(Items.FLINT_AND_STEEL) //FLINT & STEEL
+                .requires(ModItems.LEBRON_ESSENCE.get()) //CHANGE THIS TO THE LEBRON ESSENCE
                 .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
-                .unlockedBy(getHasName(Items.FLINT_AND_STEEL), has(Items.FLINT_AND_STEEL))
                 .save(pRecipeOutput);
 
         //RECIPE FOR HONEY DIPPED LEBRON
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HONEY_DIPPED_LEBRON.get())
-                .requires(ModItems.LEBRON.get())
                 .requires(Items.HONEY_BOTTLE)
+                .requires(ModItems.LEBRON.get())
                 .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
-                .unlockedBy(getHasName(Items.HONEY_BOTTLE), has(Items.HONEY_BOTTLE))
                 .save(pRecipeOutput);
+
+        //BALLING
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASKET_BALL.get())
+                .pattern("#$#")
+                .pattern("$O$")
+                .pattern("#$#")
+                .define('#', Items.LEATHER)
+                .define('$', Items.STRING)
+                .define('O', Items.SLIME_BALL)
+                .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
+                .unlockedBy(getHasName(Items.STRING), has(Items.STRING))
+                .unlockedBy(getHasName(Items.SLIME_BALL), has(Items.SLIME_BALL))
+                .save(pRecipeOutput);
+
+        //LEBRON JAHAMES ESSENCE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_ESSENCE.get())
+                .pattern("&&&")
+                .pattern("&O&")
+                .pattern("&&&")
+                .define('O', ModItems.BASKET_BALL.get())
+                .define('&', ModItems.LEBRON.get())
+                .unlockedBy(getHasName(ModItems.LEBRON.get()), has(ModItems.LEBRON.get()))
+                .save(pRecipeOutput);
+
+        //RECIPE FOR ESSENCE from sunshine
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LEBRON_ESSENCE.get(), 12)
+                .requires(ModItems.LEBRON_JAMES_MY_SUNSHINE.get())
+                .unlockedBy(getHasName(ModItems.LEBRON_JAMES_MY_SUNSHINE.get()), has(ModItems.LEBRON_JAMES_MY_SUNSHINE.get()))
+                .save(pRecipeOutput, FoodMod.MODID + ":" + ModItems.LEBRON_ESSENCE.get() + "_from_sunshine");
+
+        //DISC SUNSHINE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_MUSIC_DISC_SUNSHINE.get())
+                .pattern("O&O")
+                .define('O', ModItems.LEBRON_ESSENCE.get())
+                .define('&', ModItems.LEBRON_JAMES_MY_SUNSHINE.get())
+                .unlockedBy(getHasName(ModItems.LEBRON_JAMES_MY_SUNSHINE.get()), has(ModItems.LEBRON_JAMES_MY_SUNSHINE.get()))
+                .save(pRecipeOutput);
+        //DISC BLOOD DONORS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_MUSIC_DISC_BD.get())
+                .pattern("^O^")
+                .define('^', Items.REDSTONE)
+                .define('O', ModItems.LEBRON_MUSIC_DISC.get())
+                .unlockedBy(getHasName(ModItems.LEBRON_MUSIC_DISC.get()), has(ModItems.LEBRON_MUSIC_DISC.get()))
+                .save(pRecipeOutput, FoodMod.MODID + ":" + ModItems.LEBRON_MUSIC_DISC_BD.get() + "_from_i");
+
+        //BD DISC but from JAMES II
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEBRON_MUSIC_DISC_BD.get())
+                .pattern("^O^")
+                .define('^', Items.REDSTONE)
+                .define('O', ModItems.LEBRON_MUSIC_DISC_REMIX.get())
+                .unlockedBy(getHasName(ModItems.LEBRON_MUSIC_DISC_REMIX.get()), has(ModItems.LEBRON_MUSIC_DISC_REMIX.get()))
+                .save(pRecipeOutput, FoodMod.MODID + ":" + ModItems.LEBRON_MUSIC_DISC_BD.get() + "_from_ii");
     }
 
     //Hardcoded MEH
-    protected static void oreSmelting(
-            RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup
+    protected static void lebronSmithing(
+            RecipeOutput pRecipeOutput,
+            ItemLike pIngredients,
+            RecipeCategory pCategory,
+            ItemLike pResult
     ) {
-        oreCooking(pRecipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smelting");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), Ingredient.of(pIngredients), Ingredient.of(ModItems.SUPER_LEBRON.get()), pCategory, (Item) pResult)
+                .unlocks("has_super_lebron_ingot", has(ModItems.SUPER_LEBRON.get()))
+                .save(pRecipeOutput, FoodMod.MODID + ":" + getItemName(pResult) + "_smithing");
     }
 
-    protected static void oreBlasting(
-            RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup
+    protected static void superLebronSmithing(
+            RecipeOutput pRecipeOutput,
+            ItemLike pIngredients,
+            RecipeCategory pCategory,
+            ItemLike pResult
     ) {
-        oreCooking(pRecipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), Ingredient.of(pIngredients), Ingredient.of(ModItems.OP_LEBRON.get()), pCategory, (Item) pResult)
+                .unlocks("has_op_lebron_ingot", has(ModItems.OP_LEBRON.get()))
+                .save(pRecipeOutput, FoodMod.MODID + ":" + getItemName(pResult) + "_smithing");
     }
 
     private static <T extends AbstractCookingRecipe> void oreCooking(
@@ -137,5 +278,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pRecipeOutput, FoodMod.MODID + ":" + getItemName(pResult) + pSuffix + "_" + getItemName(itemlike));
         }
+    }
+
+    protected static void oreSmelting(
+            RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup
+    ) {
+        oreCooking(pRecipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smelting");
+    }
+
+    protected static void oreBlasting(
+            RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup
+    ) {
+        oreCooking(pRecipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
     }
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_lebron_i_hope_that_doesnt_sound_too_weird_out_of_context_holy_fuck_i_sure_hope_no_one_has_advanced_tooltips_on": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morefood:raw_lebron_i_hope_that_doesnt_sound_too_weird_out_of_context_holy_fuck_i_sure_hope_no_one_has_advanced_tooltips_on"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morefood:cooked_lebron_from_smelting_raw_lebron_i_hope_that_doesnt_sound_too_weird_out_of_context_holy_fuck_i_sure_hope_no_one_has_advanced_tooltips_on"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_lebron_i_hope_that_doesnt_sound_too_weird_out_of_context_holy_fuck_i_sure_hope_no_one_has_advanced_tooltips_on"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morefood:cooked_lebron_from_smelting_raw_lebron_i_hope_that_doesnt_sound_too_weird_out_of_context_holy_fuck_i_sure_hope_no_one_has_advanced_tooltips_on"
+    ]
+  }
+}

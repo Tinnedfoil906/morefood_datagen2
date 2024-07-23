@@ -25,6 +25,8 @@ public class ModSounds
     public static final RegistryObject<SoundEvent> LEBRON_BLOCK_HIT = reigsterSoundEvents("lebron_block_hit");
 
     public static final RegistryObject<SoundEvent> LEBRON_SONG = reigsterSoundEvents("lebron_song");
+    public static final RegistryObject<SoundEvent> LEBRON_SONG_REMIX = reigsterSoundEvents("lebron_song_remix");
+    public static final RegistryObject<SoundEvent> LEBRON_SONG_SUNSHINE = reigsterSoundEvents("lebron_song_sunshine");
 
     public static final ForgeSoundType LEBRON_BLOCK_SOUNDS = new ForgeSoundType(1, 1,
             ModSounds.LEBRON_BLOCK_BREAK, ModSounds.LEBRON_BLOCK_STEP, ModSounds.LEBRON_BLOCK_PLACE, ModSounds.LEBRON_BLOCK_HIT, ModSounds.LEBRON_BLOCK_FALL);
