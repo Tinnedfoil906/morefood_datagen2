@@ -10,6 +10,7 @@ import net.creeperio.foodmod.sound.ModSounds;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
