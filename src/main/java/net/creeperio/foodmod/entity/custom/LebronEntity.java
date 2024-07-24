@@ -1,9 +1,8 @@
 package net.creeperio.foodmod.entity.custom;
 
+import net.creeperio.foodmod.entity.animations.ModAnimationsDefinition;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -26,23 +25,78 @@ public class LebronEntity extends Monster {
         super(pEntityType, pLevel);
     }
 
+    public final AnimationState idleAnimationState = new AnimationState();
+    //public final AnimationState walkAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
+    @Override
+    public void tick() {
+        super.tick();
+
+        if(this.level().isClientSide()) {
+            setupAnimationStates();
+        }
+    }
+
+    private void setupAnimationStates() {
+        if (idleAnimationTimeout <= 0) {
+                //this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+                this.idleAnimationTimeout = 40; //40 makes for the 2 seconds the animation lasts
+            //the random int would just make the pause between
+            this.idleAnimationState.start(this.tickCount);
+        } else {
+            --this.idleAnimationTimeout;
+    }
+
+        /*if (!walkAnimation.isMoving()) {
+            if (idleAnimationTimeout <= 0) {
+                //this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+                this.idleAnimationTimeout = 40; //40 makes for the 2 seconds the animation lasts
+                //the random int would just make the pause between
+                this.idleAnimationState.start(this.tickCount);
+            } else {
+                --this.idleAnimationTimeout;
+            }
+        }
+
+        if (walkAnimation.isMoving()) {
+            idleAnimationState.stop();
+            idleAnimationTimeout = 1;
+        }*/
+    }
+
+    @Override
+    protected void updateWalkAnimation(float pPartialTick) {
+        float f;
+        if (this.getPose() == Pose.STANDING) {
+            f = Math.min(pPartialTick * 6F, 1F);
+        } else {
+            f = 0F;
+        }
+        this.walkAnimation.update(f, 0.2F);
+    }
+
     @Override
     protected void registerGoals() {
         //Float in water
         this.goalSelector.addGoal(0,
                 new FloatGoal(this));
 
+        //Look at player or around randomly
+        this.goalSelector.addGoal(3,
+                new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(3,
+                new RandomLookAroundGoal(this));
+        this.addBehaviourGoals();
+    }
+
+    protected void addBehaviourGoals() {
         //Attack player
         this.targetSelector.addGoal(1,
                 new NearestAttackableTargetGoal<>(this, Player.class, true));
         //Water avoiding random stroll (IDK what it is, but it probably makes it walk around water)
         this.goalSelector.addGoal(2,
                 new WaterAvoidingRandomStrollGoal(this, 1.0));
-        //Look at player or around randomly
-        this.goalSelector.addGoal(3,
-                new LookAtPlayerGoal(this, Player.class, 8.0F));
-        this.goalSelector.addGoal(3,
-                new RandomLookAroundGoal(this));
     }
 
     public static AttributeSupplier.Builder createAttributes()

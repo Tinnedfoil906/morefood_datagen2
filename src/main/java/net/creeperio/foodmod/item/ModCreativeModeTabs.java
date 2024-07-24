@@ -88,6 +88,8 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.OP_LEBRON_AXE.get());
                         output.accept(ModItems.OP_LEBRON_SHOVEL.get());
                         output.accept(ModItems.OP_LEBRON_HOE.get());
+
+                        output.accept(ModItems.LEBRON_SPAWN_EGG.get());
                     })
                     .build());
 

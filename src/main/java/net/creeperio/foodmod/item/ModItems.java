@@ -1,13 +1,16 @@
 package net.creeperio.foodmod.item;
 
 import net.creeperio.foodmod.FoodMod;
+import net.creeperio.foodmod.entity.ModEntities;
 import net.creeperio.foodmod.item.custom.ExtraBurntLebronJames;
 import net.creeperio.foodmod.item.custom.FlintAndSteelAndLebron;
 import net.creeperio.foodmod.item.custom.HoneyDippedLebron;
 import net.creeperio.foodmod.item.obsolete.CustomSwordItem;
 import net.creeperio.foodmod.sound.ModSounds;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -176,6 +179,13 @@ public class ModItems
 
     public static final RegistryObject<Item> BASKET_BALL = ITEMS.register("basket_ball",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> LEBRON_SPAWN_EGG = ITEMS.register("lebron_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.LEBRON,
+                    0x74553a,
+                    0xffdd2e,
+                    new Item.Properties()
+            ));
 
     public static void register(IEventBus eventBus)
     {

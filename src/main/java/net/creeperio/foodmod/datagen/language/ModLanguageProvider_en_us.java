@@ -56,6 +56,9 @@ public class ModLanguageProvider_en_us extends LanguageProvider {
         this.add(ModItems.BASKET_BALL.get(), "Basket Ball");
         this.add(ModItems.LEBRON_ESSENCE.get(), "LeBron James Essence");
 
+        //SPAWN EGG
+        this.add(ModItems.LEBRON_SPAWN_EGG.get(), "LeBron James Spawn Egg");
+
         //REGULAR, SUPER AND OP TOOLS
         this.add(ModItems.LEBRON_PICKAXE.get(), "LeBron James Pickaxe");
         this.add(ModItems.LEBRON_SWORD.get(), "LeBron James Sword");

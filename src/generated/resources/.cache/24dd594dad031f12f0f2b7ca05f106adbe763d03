@@ -1,4 +1,4 @@
-// 1.20.6	2024-07-23T01:14:09.3892779	Item Models: morefood
+// 1.20.6	2024-07-24T14:13:22.9421276	Item Models: morefood
 0c213f214604985d81d64a4e521b3ded038b9a56 assets/morefood/models/item/ash.json
 b3ac5461e04585168948cbc11718369f6cb4e74b assets/morefood/models/item/burnt_lebron.json
 c127ae8be7881793d20d42686523e05cb509ae55 assets/morefood/models/item/cooked_lebron.json
@@ -21,6 +21,7 @@ f9eb7b3533fa106e4410e239b81a6a44b7d47c95 assets/morefood/models/item/lebron_musi
 ef2931ed31c76da2644bcd12b025ba72a5ca6cb4 assets/morefood/models/item/lebron_pressure_plate.json
 32366480c33316eb0cdcd1c388685df1a593fbe0 assets/morefood/models/item/lebron_shovel.json
 5ac38d781ca315ed355ab8f25e247af5d8447b6d assets/morefood/models/item/lebron_slab.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/morefood/models/item/lebron_spawn_egg.json
 8afa8387e03cc4f1810644f35b2bab9e821af24b assets/morefood/models/item/lebron_stairs.json
 f1290da8e9f7525f0e5fe922933f4207336cddd5 assets/morefood/models/item/lebron_sword.json
 4c10abe393828dc4568eeeaf70f506c69756b7ae assets/morefood/models/item/lebron_trapdoor.json

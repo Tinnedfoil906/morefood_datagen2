@@ -8,7 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class LebronRenderer extends MobRenderer<LebronEntity, LebronModel<LebronEntity>> {
     public LebronRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new LebronModel<>(pContext.bakeLayer(ModModelLayers.LEBRON_LAYER)), 1F);
+        super(pContext, new LebronModel<>(pContext.bakeLayer(ModModelLayers.LEBRON_LAYER)), 0.5F);
     }
 
     @Override

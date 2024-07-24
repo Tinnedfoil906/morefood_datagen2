@@ -2,32 +2,29 @@ package net.creeperio.foodmod.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.creeperio.foodmod.entity.animations.ModAnimationsDefinition;
+import net.creeperio.foodmod.entity.custom.LebronEntity;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 
 public class LebronModel<T extends Entity> extends HierarchicalModel<T> {
 	private final ModelPart lebron;
-	/*private final ModelPart body;
-	private final ModelPart leg1;
-	private final ModelPart leg2;
-	private final ModelPart torso;
-	private final ModelPart arm1;
-	private final ModelPart arm2;*/
 	private final ModelPart head;
 
-	public LebronModel(ModelPart root) {
+    public LebronModel(ModelPart root) {
 		this.lebron = root.getChild("lebron");
-		/*this.body = root.getChild("body");
-		this.leg1 = root.getChild("leg1");
-		this.leg2 = root.getChild("leg2");
-		this.torso = root.getChild("torso");
-		this.arm1 = root.getChild("arm1");
-		this.arm2 = root.getChild("arm2");*/
-		this.head = root.getChild("body").getChild("torso").getChild("head");
+        ModelPart body = root.getChild("lebron").getChild("body");
+        ModelPart leg1 = root.getChild("lebron").getChild("body").getChild("leg1");
+        ModelPart leg2 = root.getChild("lebron").getChild("body").getChild("leg2");
+        ModelPart torso = root.getChild("lebron").getChild("body").getChild("torso");
+        ModelPart arm1 = root.getChild("lebron").getChild("body").getChild("torso").getChild("arm1");
+        ModelPart arm2 = root.getChild("lebron").getChild("body").getChild("torso").getChild("arm2");
+		this.head = root.getChild("lebron").getChild("body").getChild("torso").getChild("head");
 	}
 
 	public static LayerDefinition createBodyLayer() {
@@ -55,8 +52,26 @@ public class LebronModel<T extends Entity> extends HierarchicalModel<T> {
 	}
 
 	@Override
-	public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	//public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		resetPose();
+		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
+		this.animateWalk(ModAnimationsDefinition.WALK, limbSwing, limbSwingAmount, 2F, 2.5F);
+		this.animate(((LebronEntity) entity).idleAnimationState, ModAnimationsDefinition.IDLE_DYNAMIC, ageInTicks, 1);
+		//this.animate(((LebronEntity) entity).walkAnimationState, ModAnimationsDefinition.WALK, ageInTicks, 1);
+	}
+
+	public void resetPose() {
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+	}
+
+	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
+		pNetHeadYaw = Mth.clamp(pNetHeadYaw, -30.0F, 30.0F);
+		pHeadPitch = Mth.clamp(pHeadPitch, -25.0F, 45.0F);
+
+		this.head.yRot = pNetHeadYaw * ((float)Math.PI / 180F);
+		this.head.xRot = pHeadPitch * ((float)Math.PI / 180F);
 	}
 
 	@Override
