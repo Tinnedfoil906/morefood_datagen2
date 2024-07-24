@@ -76,6 +76,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.OP_LEBRON_HOE);
 
         withExistingParent(ModItems.LEBRON_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        //simpleItem(ModItems.LEBRON_SPAWN_EGG);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

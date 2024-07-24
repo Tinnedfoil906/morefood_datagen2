@@ -183,8 +183,8 @@ public class ModItems
 
     public static final RegistryObject<Item> LEBRON_SPAWN_EGG = ITEMS.register("lebron_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.LEBRON,
-                    0x74553a,
                     0xffdd2e,
+                    0x74553a,
                     new Item.Properties()
             ));
 
