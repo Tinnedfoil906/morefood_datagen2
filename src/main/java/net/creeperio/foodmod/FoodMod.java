@@ -3,8 +3,10 @@ package net.creeperio.foodmod;
 import com.mojang.logging.LogUtils;
 import net.creeperio.foodmod.block.ModBlocks;
 import net.creeperio.foodmod.entity.ModEntities;
+import net.creeperio.foodmod.entity.client.LebronRenderer;
 import net.creeperio.foodmod.item.*;
 import net.creeperio.foodmod.sound.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -84,8 +86,7 @@ public class FoodMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.LEBRON.get(), LebronRenderer::new);
         }
     }
 }
-//git test
