@@ -41,7 +41,7 @@ public class LebronEntity extends Monster {
     private void setupAnimationStates() {
         if (idleAnimationTimeout <= 0) {
                 //this.idleAnimationTimeout = this.random.nextInt(40) + 80;
-                this.idleAnimationTimeout = 40; //40 makes for the 2 seconds the animation lasts
+                this.idleAnimationTimeout = 80; //80 makes for the 4 seconds the animation lasts
             //the random int would just make the pause between
             this.idleAnimationState.start(this.tickCount);
         } else {

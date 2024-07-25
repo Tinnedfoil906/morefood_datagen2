@@ -10,7 +10,7 @@ public class ModAnimationsDefinition {
     //CATMULLROM is Smooth, Bezier doesnt exist
     public static final AnimationDefinition IDLE = AnimationDefinition.Builder.withLength(0f)
             .build();
-    public static final AnimationDefinition IDLE_DYNAMIC = AnimationDefinition.Builder.withLength(2f)//.looping()
+    public static final AnimationDefinition IDLE_DYNAMIC = AnimationDefinition.Builder.withLength(4f)//.looping()
             /*.addAnimation("leg1",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 5f),
@@ -27,17 +27,17 @@ public class ModAnimationsDefinition {
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f), //5
                                     AnimationChannel.Interpolations.CATMULLROM),
-                            new Keyframe(1f, KeyframeAnimations.degreeVec(0f, 0f, 5f), //7.5
+                            new Keyframe(2f, KeyframeAnimations.degreeVec(0f, 0f, 7.5f), //7.5
                                     AnimationChannel.Interpolations.CATMULLROM),
-                            new Keyframe(2f, KeyframeAnimations.degreeVec(0f, 0f, 0f), //5
+                            new Keyframe(4f, KeyframeAnimations.degreeVec(0f, 0f, 0f), //5
                                     AnimationChannel.Interpolations.CATMULLROM)))
             .addAnimation("arm2",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f), //-5
                                     AnimationChannel.Interpolations.CATMULLROM),
-                            new Keyframe(1f, KeyframeAnimations.degreeVec(0f, 0f, -5f), //-7.5
+                            new Keyframe(2f, KeyframeAnimations.degreeVec(0f, 0f, -7.5f), //-7.5
                                     AnimationChannel.Interpolations.CATMULLROM),
-                            new Keyframe(2f, KeyframeAnimations.degreeVec(0f, 0f, 0f), //-5
+                            new Keyframe(4f, KeyframeAnimations.degreeVec(0f, 0f, 0f), //-5
                                     AnimationChannel.Interpolations.CATMULLROM)))
             /*.addAnimation("leg2",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
