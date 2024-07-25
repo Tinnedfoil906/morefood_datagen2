@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "lebron:super_lebron"
+  },
+  "base": {
+    "item": "lebron:lebron_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "lebron:super_lebron_sword"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

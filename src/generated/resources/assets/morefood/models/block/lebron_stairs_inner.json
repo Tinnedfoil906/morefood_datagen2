@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "morefood:block/lebron_block",
-    "side": "morefood:block/lebron_block",
-    "top": "morefood:block/lebron_block"
-  }
-}

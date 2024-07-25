@@ -1,0 +1,6 @@
+// 1.20.6	2024-07-25T10:53:44.3017599	Tags for minecraft:block mod id lebron
+e7f34bc0ecbd397e151122b8da9987ae287e90c5 data/minecraft/tags/blocks/fences.json
+6f25a172164dc09ed2b4ac1b31ada22b1015c5f2 data/minecraft/tags/blocks/fence_gates.json
+d689f95559e86a3b89cde897651e589f07507fab data/minecraft/tags/blocks/mineable/pickaxe.json
+c314e385ea0dcc48c73baaf67483b42fbd5ad900 data/minecraft/tags/blocks/needs_stone_tool.json
+4569ef20c22851247d82316f8166a36b4444d551 data/minecraft/tags/blocks/walls.json

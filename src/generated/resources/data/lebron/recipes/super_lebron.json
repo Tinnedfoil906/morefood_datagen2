@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "&": {
+      "item": "lebron:lebron"
+    },
+    "=": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "=O=",
+    "&&&",
+    "=O="
+  ],
+  "result": {
+    "count": 1,
+    "id": "lebron:super_lebron"
+  }
+}

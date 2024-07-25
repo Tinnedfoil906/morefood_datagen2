@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lebron:block/deepslate_lebron_ore"
+  }
+}

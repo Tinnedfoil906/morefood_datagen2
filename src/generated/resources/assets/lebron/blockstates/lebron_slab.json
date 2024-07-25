@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "lebron:block/lebron_slab"
+    },
+    "type=double": {
+      "model": "lebron:block/lebron_block"
+    },
+    "type=top": {
+      "model": "lebron:block/lebron_slab_top"
+    }
+  }
+}

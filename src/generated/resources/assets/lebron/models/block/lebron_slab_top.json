@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "lebron:block/lebron_block",
+    "side": "lebron:block/lebron_block",
+    "top": "lebron:block/lebron_block"
+  }
+}

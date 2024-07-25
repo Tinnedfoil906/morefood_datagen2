@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "$": {
+      "item": "minecraft:string"
+    },
+    "O": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "$O$",
+    "#$#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lebron:basket_ball"
+  }
+}

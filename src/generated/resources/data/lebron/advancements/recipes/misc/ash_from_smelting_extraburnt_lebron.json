@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_extraburnt_lebron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lebron:extraburnt_lebron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lebron:ash_from_smelting_extraburnt_lebron"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_extraburnt_lebron"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lebron:ash_from_smelting_extraburnt_lebron"
+    ]
+  }
+}

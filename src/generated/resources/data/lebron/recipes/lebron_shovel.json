@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "&": {
+      "item": "lebron:lebron"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "&",
+    "|",
+    "|"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lebron:lebron_shovel"
+  }
+}

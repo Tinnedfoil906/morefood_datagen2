@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "group": "lebron",
+  "ingredient": {
+    "item": "lebron:cooked_lebron"
+  },
+  "result": {
+    "id": "lebron:burnt_lebron"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "lebron_block_break": {
+    "subtitle": "sounds.lebron.lebron_block_break",
+    "sounds": [
+      "lebron:bron"
+    ]
+  },
+  "lebron_block_step": {
+    "subtitle": "sounds.lebron.lebron_block_step",
+    "sounds": [
+      "lebron:on"
+    ]
+  },
+  "lebron_block_place": {
+    "subtitle": "sounds.lebron.lebron_block_place",
+    "sounds": [
+      "lebron:le"
+    ]
+  },
+  "lebron_block_hit": {
+    "subtitle": "sounds.lebron.lebron_block_hit",
+    "sounds": [
+      "lebron:j"
+    ]
+  },
+  "lebron_block_fall": {
+    "subtitle": "sounds.lebron.lebron_block_fall",
+    "sounds": [
+      "lebron:james"
+    ]
+  },
+  "lebron_song": {
+    "sounds": [
+      {
+        "name": "lebron:lebron_song",
+        "stream": true
+      }
+    ]
+  },
+  "lebron_song_remix": {
+    "sounds": [
+      {
+        "name": "lebron:lebron_song_remix",
+        "stream": true
+      }
+    ]
+  },
+  "lebron_song_sunshine": {
+    "sounds": [
+      {
+        "name": "lebron:lebron_song_sunshine",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "^": {
+      "item": "lebron:ash"
+    }
+  },
+  "pattern": [
+    "^^^",
+    "^^^",
+    "^^^"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lebron:ash_block"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "morefood:item/lebron_james_my_sunshine"
-  }
-}

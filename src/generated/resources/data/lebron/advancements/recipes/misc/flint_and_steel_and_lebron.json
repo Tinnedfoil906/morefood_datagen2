@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lebron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lebron:lebron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lebron:flint_and_steel_and_lebron"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lebron"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lebron:flint_and_steel_and_lebron"
+    ]
+  }
+}

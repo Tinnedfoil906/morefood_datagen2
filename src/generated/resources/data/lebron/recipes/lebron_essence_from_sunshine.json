@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lebron:lebron_james_my_sunshine"
+    }
+  ],
+  "result": {
+    "count": 12,
+    "id": "lebron:lebron_essence"
+  }
+}

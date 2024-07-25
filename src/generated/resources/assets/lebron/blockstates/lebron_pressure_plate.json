@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "lebron:block/lebron_pressure_plate"
+    },
+    "powered=true": {
+      "model": "lebron:block/lebron_pressure_plate_down"
+    }
+  }
+}

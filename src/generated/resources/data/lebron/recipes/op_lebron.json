@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "&": {
+      "item": "lebron:lebron"
+    },
+    "=": {
+      "item": "lebron:super_lebron"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "=O=",
+    "&&&",
+    "=O="
+  ],
+  "result": {
+    "count": 1,
+    "id": "lebron:op_lebron"
+  }
+}
