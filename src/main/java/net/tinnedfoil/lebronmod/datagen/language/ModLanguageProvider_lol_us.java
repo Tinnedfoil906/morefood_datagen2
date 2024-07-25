@@ -86,11 +86,11 @@ public class ModLanguageProvider_lol_us extends LanguageProvider {
         this.add("tooltip.extraburnt_lebron", "DON twaste thiz, tast awful (u can uz as fwel)");
 
         //these are subtitles from sounds.json
-        this.add("sounds.morefood.lebron_block_break", "lebron jem blok brek");
-        this.add("sounds.morefood.lebron_block_step", "lebron jem blok step");
-        this.add("sounds.morefood.lebron_block_place", "lebron jem blok pleis");
-        this.add("sounds.morefood.lebron_block_hit", "lebron jem blok heet");
-        this.add("sounds.morefood.lebron_block_fall", "lebron jem blok fell");
+        this.add("sounds.lebron.lebron_block_break", "lebron jem blok brek");
+        this.add("sounds.lebron.lebron_block_step", "lebron jem blok step");
+        this.add("sounds.lebron.lebron_block_place", "lebron jem blok pleis");
+        this.add("sounds.lebron.lebron_block_hit", "lebron jem blok heet");
+        this.add("sounds.lebron.lebron_block_fall", "lebron jem blok fell");
     }
     //things you can do: Block, Item, ItemStack, Enchantment, MobEffect, and EntityType
 }

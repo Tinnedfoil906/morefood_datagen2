@@ -86,11 +86,11 @@ public class ModLanguageProvider_fr_fr extends LanguageProvider {
         this.add("tooltip.extraburnt_lebron", "Do NOT eat this (Since it's literally on fire try using it as Le fuel)");
 
         //these are subtitles from sounds.json
-        this.add("sounds.morefood.lebron_block_break", "Le LeBron James Block Break");
-        this.add("sounds.morefood.lebron_block_step", "Le LeBron James Block Step");
-        this.add("sounds.morefood.lebron_block_place", "Le LeBron James Block Place");
-        this.add("sounds.morefood.lebron_block_hit", "Le LeBron James Block Hit");
-        this.add("sounds.morefood.lebron_block_fall", "Le LeBron James Block Fall");
+        this.add("sounds.lebron.lebron_block_break", "Le LeBron James Block Break");
+        this.add("sounds.lebron.lebron_block_step", "Le LeBron James Block Step");
+        this.add("sounds.lebron.lebron_block_place", "Le LeBron James Block Place");
+        this.add("sounds.lebron.lebron_block_hit", "Le LeBron James Block Hit");
+        this.add("sounds.lebron.lebron_block_fall", "Le LeBron James Block Fall");
     }
     //things you can do: Block, Item, ItemStack, Enchantment, MobEffect, and EntityType
 }

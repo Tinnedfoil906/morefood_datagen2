@@ -86,11 +86,11 @@ public class ModLanguageProvider_ro_ro extends LanguageProvider {
         this.add("tooltip.extraburnt_lebron", "NU mânca asta (Fiindcă este în flăcări ai putea folosi acest obiect intr-un furnal pentru a prăji ceva)");
 
         //these are subtitles from sounds.json
-        this.add("sounds.morefood.lebron_block_break", "Spargerea unui Block de LeBron James");
-        this.add("sounds.morefood.lebron_block_step", "Călcarea pe un Block de LeBron James");
-        this.add("sounds.morefood.lebron_block_place", "Plasarea unui Block de LeBron James");
-        this.add("sounds.morefood.lebron_block_hit", "Lovirea unui Block de LeBron James");
-        this.add("sounds.morefood.lebron_block_fall", "Căderea pe un Block de LeBron James");
+        this.add("sounds.lebron.lebron_block_break", "Spargerea unui Block de LeBron James");
+        this.add("sounds.lebron.lebron_block_step", "Călcarea pe un Block de LeBron James");
+        this.add("sounds.lebron.lebron_block_place", "Plasarea unui Block de LeBron James");
+        this.add("sounds.lebron.lebron_block_hit", "Lovirea unui Block de LeBron James");
+        this.add("sounds.lebron.lebron_block_fall", "Căderea pe un Block de LeBron James");
     }
     //things you can do: Block, Item, ItemStack, Enchantment, MobEffect, and EntityType
 }
